@@ -10,18 +10,17 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
 
 <VBox xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.poo.gestorbiblioteca.ui.controller.prestamos.PrestamosController">
     <children>
         <HBox alignment="CENTER_LEFT" spacing="10" style="-fx-padding: 5 10 5 10;">
-         <ImageView fitHeight="35.0" fitWidth="35.0">
+         <ImageView fitHeight="25.0" fitWidth="25.0">
             <image>
                <Image url="@../images/search-icon.png" />
             </image>
          </ImageView>
             <TextField fx:id="campoBusquedaPrestamos" prefHeight="35.0" prefWidth="20.0" promptText="Buscar por DNI, Socio, Fecha o Estado..." HBox.hgrow="ALWAYS" />
-            <Button fx:id="btnNuevoPrestamo" mnemonicParsing="false" text="Nuevo Préstamo" onAction="#handleNuevoPrestamo"/>
+            <Button fx:id="btnNuevoPrestamo" mnemonicParsing="false" onAction="#handleNuevoPrestamo" text="Nuevo Préstamo" />
         </HBox>
         <TableView fx:id="tablaPrestamos" VBox.vgrow="ALWAYS">
             <columnResizePolicy>
